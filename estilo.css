@@ -1,0 +1,164 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFD700;
+    background: #000000;
+}
+header {
+    background: linear-gradient(90deg, #444444, #222222);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFD700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #FFA500;
+}
+.hero {
+    text-align: center;
+    background: url('pay.jpg') no-repeat center center/cover;
+    color: #FFD700;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.hero h2, .hero p, .hero button {
+    position: relative;
+    z-index: 2;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.hero button {
+    background: #FFA500;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.hero button:hover {
+    background: #FFD700;
+}
+.sabores {
+    padding: 50px 20px;
+    text-align: center;
+}
+.sabores h3 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #FFD700;
+}
+.sabores .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.sabores .grid .item {
+    border: 1px solid #FFD700;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #222222;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sabores .grid .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.sabores .grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.sabores .grid .content {
+    padding: 15px;
+}
+.sabores .grid .content h4 {
+    margin: 0 0 10px;
+    color: #FFD700;
+}
+.sabores .grid .content p {
+    font-size: 1.1rem;
+    color: #FFD700;
+    margin: 0 0 10px;
+}
+.sabores .grid .content button {
+    background: #FFA500;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.sabores .grid .content button:hover {
+    background: #FFD700;
+}
+.info-extra {
+    background: #333333;
+    color: #FFD700;
+    padding: 50px 20px;
+    text-align: center;
+}
+.info-extra h4 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+}
+.info-extra p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+footer {
+    background: #111111;
+    color: #FFD700;
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #FFA500;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}

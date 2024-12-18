@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos | Deliciosos Pays</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Estilo mínimo para centrar el contenido y ajustar el tamaño del formulario */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            min-height: 70vh; /* Centrado vertical */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* Espacio entre elementos */
+            width: 100%;
+            max-width: 500px; /* Aumenté el tamaño máximo */
+        }
+
+        input, select, button {
+            width: 100%; /* Ajusta al tamaño del formulario */
+            box-sizing: border-box; /* Incluye padding y borde */
+            font-size: 1.1rem; /* Aumenta el tamaño del texto */
+            padding: 10px; /* Añade espacio interno */
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 12px; /* Botón más grande */
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deliciosos Pays</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sabores.html">Sabores</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Realiza tu Pedido</h2>
+        <p>Ordena tu pay favorito fácilmente. Llena el formulario y nosotros nos encargamos del resto.</p>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            
+            <label for="sabor">Sabor:</label>
+            <select id="sabor" name="sabor">
+                <option>Pay de Limón</option>
+                <option>Pay de Chocolate</option>
+                <option>Pay de Fresa</option>
+                <option>Pay de Mango</option>
+                <option>Pay de Queso</option>
+                <option>Pay de Zarzamora</option>
+                <option>Pay de Manzana</option>
+                <option>Pay de Piña</option>
+                <option>Pay de Coco</option>
+                <option>Pay de Durazno</option>
+                <option>Pay de Nuez</option>
+                <option>Pay de Platano</option>
+                <option>Pay de Almendra</option>
+                <option>Pay de Cafe</option>
+                <option>Pay de Frutos Rojos</option>
+            </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" placeholder="Número de pays" required>
+            
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Deliciosos Pays</p>
+    </footer>
+</body>
+</html>
